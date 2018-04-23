@@ -1,17 +1,93 @@
 body {
     margin: 0 auto;
     padding: 0 auto;
+     font-family: 'Raleway', sans-serif;
 }
 
 nav {
+    position: fixed;
+    z-index: 99;
+    text-align: center;
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(120deg, rgba(0, 175, 135, 0.77) 51.0%, rgba(255, 255, 255, 0.77) 51.0%);
+    overflow: hidden;
+    text-align: center;
+}
+
+#begin {
+    height: 100vh;
+}
+
+nav a {
+    font-weight: 100;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0px 14px;
+    color: white;
+    letter-spacing: 1.5px;
+    transition: all 1.0s;
+}
+
+#home {
+    border-right: 1px solid white;
+}
+
+#con {
+    border-left: 1px solid rgba(0, 175, 135, 0.77);
+}
+
+#xus,
+#xuss {
+    display: inline-block;
+}
+
+#xuss {
+    color: rgba(0, 175, 135, 0.77);
+}
+
+#cat,
+#loca,
+#con,
+#uss {
+    color: rgba(0, 175, 135, 0.77);
+}
+
+nav a:hover {
+    text-decoration-line: line-through;
+
+}
+
+#15c99f
+/*
+nav {
+    z-index: 99;
+    text-align: center;
+    width: 100%;
     padding: 20px;
     background: linear-gradient(120deg, rgba(0, 175, 135, 0.77) 50.5%, #ffffff 50.5%);
     overflow: hidden;
     text-align: center;
-
 }
 
-nav a {
+ul {
+    margin-left: -35px;
+    margin-top: -10px;
+    list-style-type: none;
+    z-index: 99;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     letter-spacing: 1.5px;
@@ -20,15 +96,21 @@ nav a {
     padding: 0px 10px;
     color: white;
     letter-spacing: 1.5px;
-    transition: all 1.0s;
+}
+nav a{
+    color: white;
 }
 
+#home {
+    border-right: 1px solid white;
+}
 
-nav #home:hover,
-nav #our:hover,
-nav #us:hover {
+#con {
+    border-left: 1px solid rgba(0, 175, 135, 0.77) ;
+}
+
+nav a:hover{
     text-decoration-line: line-through;
-    text-decoration-color: white;
 }
 
 #cat,
@@ -38,12 +120,39 @@ nav #us:hover {
     color: rgba(0, 175, 135, 0.77);
 }
 
-nav #cat:hover,
-nav #loca:hover,
-nav #con:hover {
-    
-    text-decoration-line: line-through;
-    text-decoration-color: rgba(0, 175, 135, 0.77);
+}*/
+.w3-content {
+ width: 50%;
+     position: absolute;
+    height: 340px;
+    margin-top: 200px;    
+}
 
+.w3-content img {
+    width: 50%;
+     position: absolute;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 300px;
+}
 
+#menu {
+    height: 100vh;
+}
+#menu_text h1{
+    text-align: center;
+}
+
+#menu_grid {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    height: 300px;
+    width: 80%;
+    margin-left: 10%;
+}
+.pic{
+    text-align: center;
+}
+.pic img {
+    height: 100px;
 }

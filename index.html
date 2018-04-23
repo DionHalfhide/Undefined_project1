@@ -1,24 +1,90 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
 </head>
 
 <body>
- <nav>
+   <section id="begin">
+    <nav>
         <a id="home" href="index.html" >Home</a>
-        <a id="our" href="gerechten.html" >Our menu</a>
-        <a id="us" href="about.html" >About us</a>
+        <a id="our" href="#menu" >Our menu</a>
+        <a id="us" href="about.html" > <section id="xus">About</section>     <section id="xuss">us</section></a> 
         <a id="cat" href="more.html" >Catering</a>
-        <a id="loca" href="location.html" >Gallery</a>
         <a id="con" href="contact.html">Contact</a>
     </nav>
-  
+    <!--<nav>
+
+        <ul>
+            <li class="nav-item active">
+                <a class="nav-link scroll" id="home" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link scroll" href="#who" id="our" href="gerechten.html">Our menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link scroll" href="#com" id="us" href="about.html">About us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link scroll" href="#pro" id="cat" href="more.html">Catering</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link scroll" id="loca" href="location.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link scroll" id="con" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>-->
+
+ <div id="scroll">
+       
+        <div class="w3-content w3-section">
+            <img class="mySlides" src="img/pexels-photo-376464.jpeg">
+            <img class="mySlides" src="img/food-dinner-lemon-rice.jpg">
+            <img class="mySlides" src="img/pexels-photo-718742.jpeg">
+            <img class="mySlides" src="img/salad-healthy-diet-spinach.jpg">
+        </div>
+    </div>
+    </section>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+    </script>
+    
+    <section  id="menu">
+      <div id="menu_text"><h1>menu</h1></div>
+       <section id="menu_grid">
+           <div class="pic pic1"><img src="img/salad.png"><div id="pic_desc"><h1>salad</h1></div></div>
+           <div class="pic pic2"><img src="img/spaguetti.png"><div id="pic_desc"><h1>warm</h1></div></div>
+           <div class="pic pic3"><img src="img/soup.png"><div id="pic_desc"><h1>soup</h1></div></div>
+           <div class="pic pic4"><img src="img/ice-cream.png"><div id="pic_desc"><h1>deserts</h1></div></div>
+       </section>
+        
+    </section>
+ 
+
 </body>
+
 </html>
