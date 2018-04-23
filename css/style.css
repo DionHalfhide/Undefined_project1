@@ -1,0 +1,49 @@
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+nav {
+    padding: 20px;
+    background: linear-gradient(120deg, rgba(0, 175, 135, 0.77) 50.5%, #ffffff 50.5%);
+    overflow: hidden;
+    text-align: center;
+
+}
+
+nav a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0px 10px;
+    color: white;
+    letter-spacing: 1.5px;
+    transition: all 1.0s;
+}
+
+
+nav #home:hover,
+nav #our:hover,
+nav #us:hover {
+    text-decoration-line: line-through;
+    text-decoration-color: white;
+}
+
+#cat,
+#loca,
+#con {
+
+    color: rgba(0, 175, 135, 0.77);
+}
+
+nav #cat:hover,
+nav #loca:hover,
+nav #con:hover {
+    
+    text-decoration-line: line-through;
+    text-decoration-color: rgba(0, 175, 135, 0.77);
+
+
+}
