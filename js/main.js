@@ -1,4 +1,18 @@
 $(document).ready(function () {
+    
+    $("#us")
+    .mouseenter(function () {
+     
+        $("#xuss").css("text-decoration-line", ' line-through');
+        $("#xus").css("text-decoration-line", ' line-through');
+    })
+    .mouseleave(function () {
+        $("#xuss").css("text-decoration-line", ' none');
+        $("#xus").css("text-decoration-line", ' none');
+        
+    });
+
+    
     //smooth scrolling
     var scrollLink = $(".scroll");
 
@@ -6,7 +20,7 @@ $(document).ready(function () {
 
         e.preventDefault();
         $("body,html").animate({
-            scrollTop: $(this.hash).offset().top 
+            scrollTop: $(this.hash).offset().top
         }, 2000);
     });
     //Active link switching
@@ -21,30 +35,24 @@ $(document).ready(function () {
                 $(this).parent().siblings().removeClass('active');
             }
         });
-
-
     });
-    
-    
-
 });
 
 
 $(window).scroll(function () {
-    var Beneden = 0;
-
-    if ($(document).scrollTop() > 600) {
-        Beneden = Beneden - 80;
-        document.getElementById("shit").style.marginTop = Beneden + "vh";
-        document.getElementById("home").innerHTML = 'HOME';
-
-    } else if ($(document).scrollTop() < 100 && document.getElementById("shit").style.marginTop == '-80vh') {
-        Beneden = Beneden + 0;
-        document.getElementById("shit").style.marginTop = Beneden + "%";
-        document.getElementById("home").innerHTML = '';
-        document.getElementById("home").style.borderRight = 'none';
+    if ($(document).scrollTop() > 50) {
+        $("nav").css("box-shadow", ' 0px 4px 48px -1px rgba(0,0,0,0.57)');
+    } else if ($(document).scrollTop() < 50) {
+        $("nav").css("box-shadow", ' 0px 4px 48px -1px rgba(0,0,0,0.00)');
+        $("nav").css("  transition", '  all 1.0s');
+    }
+});
+$(window).scroll(function () {
+    if ($(document).scrollTop() > 1) {
+       $("nav").css("background", ' linear-gradient(120deg, rgba(10, 195, 153, 0.8) 51.0%, rgba(255, 255, 255, 0.8) 51.0%)');
+    } else if ($(document).scrollTop() < 1) {
+         $("nav").css("background", 'none');
     }
 });
 
 
-       

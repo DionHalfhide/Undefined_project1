@@ -1,7 +1,7 @@
 body {
     margin: 0 auto;
     padding: 0 auto;
-     font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 nav {
@@ -10,12 +10,14 @@ nav {
     text-align: center;
     width: 100%;
     padding: 18px;
-    background: linear-gradient(120deg, rgba(0, 175, 135, 0.77) 51.0%, rgba(255, 255, 255, 0.77) 51.0%);
+    /*background: linear-gradient(120deg, rgba(0, 175, 135, 0.77) 51.0%, rgba(255, 255, 255, 0.77) 51.0%);*/
     overflow: hidden;
     text-align: center;
+    transition: all 2s;
 }
 
 #begin {
+    background: linear-gradient(120deg, rgba(0, 175, 135, 0.77) 40.13%, rgba(255, 255, 255, 0.77) 40.13%);
     height: 100vh;
 }
 
@@ -31,6 +33,7 @@ nav a {
     letter-spacing: 1.5px;
     transition: all 1.0s;
 }
+
 
 #home {
     border-right: 1px solid white;
@@ -60,6 +63,17 @@ nav a:hover {
     text-decoration-line: line-through;
 
 }
+#begin_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 200px;
+}
+.text h1{
+    font-size: 40px;
+}
+
 
 #15c99f
 /*
@@ -121,38 +135,154 @@ nav a:hover{
 }
 
 }*/
+
 .w3-content {
- width: 50%;
-     position: absolute;
+    width: 50%;
+    position: absolute;
     height: 340px;
-    margin-top: 200px;    
+    margin-top: 200px;
 }
 
 .w3-content img {
     width: 50%;
-     position: absolute;
+    position: absolute;
     height: 500px;
     margin-top: 200px;
     margin-left: 300px;
 }
 
-#menu {
-    height: 100vh;
-}
-#menu_text h1{
+
+#menu_text h1 {
     text-align: center;
 }
 
 #menu_grid {
     display: grid;
-    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     height: 300px;
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
+    margin-left: 5%;
 }
-.pic{
+
+.pic {
     text-align: center;
 }
+
 .pic img {
+    margin-bottom: -70px;
+    padding-top: 100px;
     height: 100px;
+}
+
+.picx {
+    text-align: center;
+}
+
+.picx img {
+    border: 1px solid rgba(0, 175, 135, 0.77);
+    border-radius: 50%;
+    height: 100%;
+    width: 45%;
+    height: 170px;
+    margin-top: 20px;
+}
+
+.pic_desc h1 {
+    text-transform: uppercase;
+    color: white;
+    padding: 10px 0px 10px 100px;
+    text-align: left;
+    background: linear-gradient(120deg, rgba(0, 175, 135, 0.77) 5.0%, rgba(255, 255, 255, 0.77) 21.0%);
+
+}
+
+.picx h1 {
+    text-align: center;
+}
+
+#lijn {
+    text-align: center;
+}
+
+#lijn h2 {
+    margin-top: -3px;
+    margin-bottom: -15px;
+    color: rgba(0, 175, 135, 0.77);
+}
+
+#menu_grid h1 {
+    display: inline-block;
+    border-bottom: 1px solid rgba(0, 175, 135, 0.77);
+}
+
+.mySlides {
+    width: 100%;
+}
+
+.slider {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    background-color: #1f1f1f;
+}
+
+.slider > * {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    background-color: #1f1f1f;
+    animation: slider 12s infinite;
+}
+
+.slide:nth-child(1) {
+    left: 0%;
+    animation-delay: -1s;
+    background-image: url(../img/pexels-photo-376464.jpeg);
+    background-position: center;
+    background-size: cover;
+     height: 100%;
+}
+.slide:nth-child(2) {
+    animation-delay: 2s;
+    background-image: url(../img/food-dinner-lemon-rice.jpg);
+    background-position: center;
+    background-size: cover;
+     height: 100%;
+}
+.slide:nth-child(3) {
+    animation-delay: 5s;
+    background-image: url(../img/pexels-photo-718742.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+.slide:nth-child(4) {
+    animation-delay: 8s;
+    background-image: url(../img/salad-healthy-diet-spinach%20copy.jpg);
+    background-position: center;
+    background-size: cover;
+     height: 100%;
+}
+.slide p {
+    font-size: 70px;
+    width: 100%;
+    display: inline-block;
+    margin-top: 340px;
+    color: white;
+    text-align: center;
+    text-align: center;
+}
+
+@keyframes slide{
+    0%{left: 100%; width: 100%}
+    5%{left: 0%;}
+    25%{left: 0%;}
+    30%{left: -100%; width: 100%;}
+    30.0001%{left: -100%; width:0%;}
+    100%{left: 100%; width:0%;}
+    
 }

@@ -12,78 +12,195 @@
 </head>
 
 <body>
-   <section id="begin">
-    <nav>
-        <a id="home" href="index.html" >Home</a>
-        <a id="our" href="#menu" >Our menu</a>
-        <a id="us" href="about.html" > <section id="xus">About</section>     <section id="xuss">us</section></a> 
-        <a id="cat" href="more.html" >Catering</a>
-        <a id="con" href="contact.html">Contact</a>
-    </nav>
-    <!--<nav>
-
-        <ul>
-            <li class="nav-item active">
-                <a class="nav-link scroll" id="home" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link scroll" href="#who" id="our" href="gerechten.html">Our menu</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link scroll" href="#com" id="us" href="about.html">About us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link scroll" href="#pro" id="cat" href="more.html">Catering</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link scroll" id="loca" href="location.html">Gallery</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link scroll" id="con" href="contact.html">Contact</a>
-            </li>
-        </ul>
-    </nav>-->
-
- <div id="scroll">
-       
-        <div class="w3-content w3-section">
-            <img class="mySlides" src="img/pexels-photo-376464.jpeg">
-            <img class="mySlides" src="img/food-dinner-lemon-rice.jpg">
-            <img class="mySlides" src="img/pexels-photo-718742.jpeg">
-            <img class="mySlides" src="img/salad-healthy-diet-spinach.jpg">
-        </div>
-    </div>
-    </section>
     <script>
-        var myIndex = 0;
-        carousel();
+        var slideIndex = 1;
+        showDivs(slideIndex);
 
-        function carousel() {
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
             var i;
             var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
             for (i = 0; i < x.length; i++) {
                 x[i].style.display = "none";
             }
-            myIndex++;
-            if (myIndex > x.length) {
-                myIndex = 1
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-white", "");
             }
-            x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 3000);
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " w3-white";
         }
+
     </script>
-    
-    <section  id="menu">
-      <div id="menu_text"><h1>menu</h1></div>
-       <section id="menu_grid">
-           <div class="pic pic1"><img src="img/salad.png"><div id="pic_desc"><h1>salad</h1></div></div>
-           <div class="pic pic2"><img src="img/spaguetti.png"><div id="pic_desc"><h1>warm</h1></div></div>
-           <div class="pic pic3"><img src="img/soup.png"><div id="pic_desc"><h1>soup</h1></div></div>
-           <div class="pic pic4"><img src="img/ice-cream.png"><div id="pic_desc"><h1>deserts</h1></div></div>
-       </section>
+    <section id="begin">
+        <nav>
+            <a id="home" href="index.html">Home</a>
+            <a id="our" href="#menu">Our menu</a>
+            <a id="us" href="#about">
+                <section id="xus">About</section>
+                <section id="xuss">us</section>
+            </a>
+            <a id="cat" href="more.html">Catering</a>
+            <a id="con" href="contact.html">Contact</a>
+        </nav>
         
+       <div id="begin_grid">
+          <div class="text text1"><h1>food</h1></div>
+          <div class="text text2"><h1>you need</h1></div>
+           
+       </div>
     </section>
- 
+
+    <section id="menu">
+        <div id="menu_text">
+            <h1>menu</h1>
+        </div>
+        <div class="pic pic1"><img src="img/salad.png">
+
+            <div class="pic_desc">
+                <h1>salad</h1>
+            </div>
+        </div>
+        <section id="menu_grid">
+            <div class="picx"><img src="img/food-salad-healthy-lunch.jpg">
+                <div id="lijn">
+                    <h2>x</h2>
+                </div>
+                <h1>beans and rice</h1>
+            </div>
+            <div class="picx"><img src="img/salad-healthy-diet-spinach%20copy.jpg">
+                <div id="lijn">
+                    <h2>x</h2>
+                </div>
+                <h1>beans and rice</h1>
+            </div>
+            <div class="picx"><img src="img/pexels-photo-434258.jpeg">
+                <div id="lijn">
+                    <h2>x</h2>
+                </div>
+                <h1>beans and rice</h1>
+            </div>
+
+        </section>
+
+
+        <div class="pic pic2"><img src="img/spaguetti.png">
+            <div class="pic_desc">
+                <h1>warm</h1>
+            </div>
+        </div>
+        <section id="menu_grid">
+            <div class="picx"><img src="img/pexels-photo-236798.jpeg">
+                <div id="lijn">
+                    <h2>x</h2>
+                </div>
+                <h1>beans and rice</h1>
+            </div>
+            <div class="picx"><img src="img/pexels-photo-262959.jpeg">
+                <div id="lijn">
+                    <h2>x</h2>
+                </div>
+                <h1>beans and rice</h1>
+            </div>
+            <div class="picx"><img src="img/pexels-photo-675951.jpeg">
+                <div id="lijn">
+                    <h2>x</h2>
+                </div>
+                <h1>beans and rice</h1>
+            </div>
+        </section>
+
+        <div class="pic pic3"><img src="img/soup.png">
+            <div class="pic_desc">
+                <h1>soup</h1>
+            </div>
+        </div>
+        <section id="menu_grid">
+            <div class="picx"><img src="img/spp.png">
+                <div id="lijn">
+                    <h2>x</h2>
+                </div>
+                <h1>beans and rice</h1>
+            </div>
+            <div class="picx"><img src="img/spupp.jpeg">
+                <div id="lijn">
+                    <h2>x</h2>
+                </div>
+                <h1>beans and rice</h1>
+            </div>
+            <div class="picx"><img src="img/soup-cream-soup-bowl-40814.jpeg">
+                <div id="lijn">
+                    <h2>x</h2>
+                </div>
+                <h1>beans and rice</h1>
+            </div>
+        </section>
+        <div class="pic pic4"><img src="img/ice-cream.png">
+            <div class="pic_desc">
+                <h1>deserts</h1>
+            </div>
+        </div>
+        <section id="menu_grid">
+            <div class="picx"><img src="img/ice-fruit-ice-mixed-ice-cream-sundae-162917.jpeg">
+                <div id="lijn">
+                    <h2>x</h2>
+                </div>
+                <h1>beans and rice</h1>
+            </div>
+            <div class="picx"><img src="img/icee.jpg">
+                <div id="lijn">
+                    <h2>x</h2>
+                </div>
+                <h1>beans and rice</h1>
+            </div>
+            <div class="picx"><img src="img/ice.jpeg">
+                <div id="lijn">
+                    <h2>x</h2>
+                </div>
+                <h1>beans and rice</h1>
+            </div>
+
+
+
+        </section>
+    </section>
+    <section id="about">
+        <h1>about us</h1>
+
+
+    </section>
+
+
+<!--
+
+    
+        <img class="mySlides" src="img/pexels-photo-376464.jpeg">
+        <img class="mySlides" src="img/food-dinner-lemon-rice.jpg">
+        <img class="mySlides" src="img/pexels-photo-718742.jpeg">
+        <img class="mySlides" src="img/salad-healthy-diet-spinach.jpg">-->
+  <div class="slider">
+      <div class="slide">
+          <p>slide 1</p>
+          <p>slide 2</p>
+          <p>slide 3</p>
+          <p>slide 4</p>
+      </div>
+  </div>
+    
+   
 
 </body>
 
