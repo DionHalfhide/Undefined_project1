@@ -46,22 +46,51 @@
 
     </script>
     <section id="begin">
+
+
+
+
+
+
+        <div class="dropdown">
+            <div id="login"><a href="#">
+        <img src="img/worker.png">
+        <p>LOGIN</p></a>
+            </div>
+
+        </div>
         <nav>
-            <a id="home" href="index.html">Home</a>
-            <a id="our" href="#menu">Our menu</a>
-            <a id="us" href="#about">
-                <section id="xus">About</section>
-                <section id="xuss">us</section>
-            </a>
-            <a id="cat" href="more.html">Catering</a>
-            <a id="con" href="contact.html">Contact</a>
+
+            <ul>
+                <li class="nav-item active">
+                    <a class="nav-link scroll" id="home" href="#begin">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll" id="our" href="#menu_text">Our menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll" id="us" href="#about">
+                        <section id="xus">About</section>
+                        <section id="xuss">us</section>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll" id="cat" href="#catering">Catering</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll" id="con" href="#contact">Contact</a>
+                </li>
+            </ul>
         </nav>
-        
-       <div id="begin_grid">
-          <div class="text text1"><h1>food</h1></div>
-          <div class="text text2"><h1>you need</h1></div>
-           
-       </div>
+
+        <div id="begin_grid">
+           <div id="rr"><h2>learn not more <br />
+           than ridiculous<br /> good food</h2></div>
+            <div class="text text1">
+                <h1>the  quality<br /> food you're<br /> body  earns.</h1>
+            </div>
+
+        </div>
     </section>
 
     <section id="menu">
@@ -178,29 +207,156 @@
         </section>
     </section>
     <section id="about">
-        <h1>about us</h1>
+        <h1>Team</h1>
+        <h5>OUre team consist of a small groep al heiliy trind profecionals who are delevering constant qality</h5>
+        <div id="grid_about">
+            <div class="blok blok1">
+                <div class="pica pic1"><img src="img/Jamie-Oliver.jpg"></div>
+                <div class="text_us text_us1">
+                    <h3>Jamie Oliver</h3>
+                    <p>sous chef</p>
+                </div>
+            </div>
+            <div class="blok blok2">
+                <div class="pica pic2"><img src="img/chef.jpeg"></div>
+                <div class="text_us text_us1">
+                    <h3>Jamie Oliver</h3>
+                    <p>sous chef</p>
+                </div>
+            </div>
+            <div class="blok blok3">
+                <div class="pica pic3"><img src="img/gordan.jpg"></div>
+                <div class="text_us text_us1">
+                    <h3>Jamie Oliver</h3>
+                    <p>sous chef</p>
+                </div>
+            </div>
+            <div class="blok blok4">
+                <div class="pica pic4"><img src="img/dion.jpg"></div>
+                <div class="text_us text_us1">
+                    <h3>Dion halfhide</h3>
+                    <p>Big boss</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="catering">
+        <h3>Catering</h3>
+        <div id="container">
+            <div id="green">
+                <br />
+                <form id="greeen" action="jummyhtml.php" method="get">
+                    <div class="lijn">
 
+                        <table>
 
+                            <tr>
+                                <th>
+                                    Surename
+                                </th>
+                                <td>
+                                    <div class="group">
+                                        <input type="text" name="Surename" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Dion</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Lastname
+                                </th>
+                                <td>
+                                    <div class="group">
+                                        <input type="text" name="Lastname" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Halfhide </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    E-mail
+                                </th>
+                                <td>
+                                    <div class="group">
+                                        <input type="text" name="E-mail" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>......</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    What's the <br /> event called
+                                </th>
+                                <td>
+                                    <div class="group">
+                                        <input type="text" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>What's the event called </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Which date ..
+                                </th>
+                                <td>
+                                    <div class="group" id="date">
+                                        <input type="date" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Where was <br /> the event
+                                </th>
+                                <td>
+                                    <div class="group">
+                                        <input list="places" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label> Where was the event</label>
+
+                                        <datalist id="places"> 
+                                <option value="Den Haag" >
+                                <option value="Leiden" >
+                                <option value="Amsterdam" >
+                                <option value="Rotterdam" >
+                                <option value="Utrecht" >
+                                </datalist>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h4>Contact</h4>
+        <div></div>
     </section>
 
 
-<!--
+    <!--
 
     
         <img class="mySlides" src="img/pexels-photo-376464.jpeg">
         <img class="mySlides" src="img/food-dinner-lemon-rice.jpg">
         <img class="mySlides" src="img/pexels-photo-718742.jpeg">
         <img class="mySlides" src="img/salad-healthy-diet-spinach.jpg">-->
-  <div class="slider">
-      <div class="slide">
-          <p>slide 1</p>
-          <p>slide 2</p>
-          <p>slide 3</p>
-          <p>slide 4</p>
-      </div>
-  </div>
-    
-   
+
 
 </body>
 

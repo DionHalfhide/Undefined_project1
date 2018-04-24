@@ -4,12 +4,49 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-nav {
+ul {
+    list-style-type: none;
+
+}
+
+li {
+    display: inline-block;
+}
+
+
+#login {
+    height: 34px;
     position: fixed;
+    display: inline-block;
+    border-left: 1px solid rgba(0, 175, 135, 0.77);
+    padding-left: 20px;
+    top: 15px;
+    right: 50px;
     z-index: 99;
+}
+
+#login img {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+#login a {
+    text-decoration: none;
+    color: rgba(0, 175, 135, 0.77);
+}
+
+#login p {
+    display: inline-block;
+    padding-left: 5px;
+}
+
+nav {
+    margin-left: -3px;
+    position: fixed;
+    z-index: 98;
     text-align: center;
     width: 100%;
-    padding: 18px;
     /*background: linear-gradient(120deg, rgba(0, 175, 135, 0.77) 51.0%, rgba(255, 255, 255, 0.77) 51.0%);*/
     overflow: hidden;
     text-align: center;
@@ -29,6 +66,7 @@ nav a {
     display: inline-block;
     text-decoration: none;
     padding: 0px 14px;
+
     color: white;
     letter-spacing: 1.5px;
     transition: all 1.0s;
@@ -63,80 +101,34 @@ nav a:hover {
     text-decoration-line: line-through;
 
 }
-#begin_grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 70%;
-    margin-left: 15%;
-    padding-top: 200px;
+
+#begin_grid {
+    padding-top: 80vh;
 }
-.text h1{
+
+#rr h2 {
+    padding-left: 5px;
+    text-align: left;
+    padding-right: 5px;
+    text-transform: capitalize;
+    position: absolute;
     font-size: 40px;
-}
-
-
-#15c99f
-/*
-nav {
-    z-index: 99;
-    text-align: center;
-    width: 100%;
-    padding: 20px;
-    background: linear-gradient(120deg, rgba(0, 175, 135, 0.77) 50.5%, #ffffff 50.5%);
-    overflow: hidden;
-    text-align: center;
-}
-
-ul {
-    margin-left: -35px;
-    margin-top: -10px;
-    list-style-type: none;
-    z-index: 99;
-    position: fixed;
-    text-align: center;
-    width: 100%;
-}
-
-li {
-    display: inline-block;
-}
-
-li a {
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    letter-spacing: 1.5px;
-    display: inline-block;
-    text-decoration: none;
-    padding: 0px 10px;
     color: white;
-    letter-spacing: 1.5px;
-}
-nav a{
-    color: white;
+    margin-top: -40vh;
 }
 
-#home {
-    border-right: 1px solid white;
-}
-
-#con {
-    border-left: 1px solid rgba(0, 175, 135, 0.77) ;
-}
-
-nav a:hover{
-    text-decoration-line: line-through;
-}
-
-#cat,
-#loca,
-#con {
-
+.text h1 {
+    padding-right: 5px;
+    text-transform: capitalize;
+    margin-top: -25vh;
+    float: right;
+    text-align: right;
+    font-size: 90px;
     color: rgba(0, 175, 135, 0.77);
 }
 
-}*/
 
-.w3-content {
+#15c99f .w3-content {
     width: 50%;
     position: absolute;
     height: 340px;
@@ -151,15 +143,21 @@ nav a:hover{
     margin-left: 300px;
 }
 
+#menu {
+    margin-top: 0vh;
+}
 
 #menu_text h1 {
+    color: rgba(0, 175, 135, 0.77);
+    padding-top: 5vh;
     text-align: center;
+    font-size: 56px;
+    font-weight: bold;
 }
 
 #menu_grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 300px;
     width: 90%;
     margin-left: 5%;
 }
@@ -212,77 +210,253 @@ nav a:hover{
 
 #menu_grid h1 {
     display: inline-block;
-    border-bottom: 1px solid rgba(0, 175, 135, 0.77);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.37);
 }
 
-.mySlides {
-    width: 100%;
+#grid_about {
+    background-color: white;
+    z-index: 99;
+    box-shadow: 0px 4px 48px -1px rgba(0, 0, 0, 0.57);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 60%;
+    margin-left: 20%;
+    border: 1% solid rgba(128, 128, 128, 0.37);
+    height: 320px;
 }
 
-.slider {
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    overflow: hidden;
-    background-color: #1f1f1f;
+.blok {
+    border: 1px solid #e5e5e5;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
-.slider > * {
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    overflow: hidden;
-    background-color: #1f1f1f;
-    animation: slider 12s infinite;
+#about {
+    z-index: -1;
+    background: linear-gradient(345deg, rgba(0, 175, 135, 0.77) 51.0%, rgba(255, 255, 255, 0.77) 51.0%);
+    margin-top: 20vh;
+    height: 80vh;
 }
 
-.slide:nth-child(1) {
-    left: 0%;
-    animation-delay: -1s;
-    background-image: url(../img/pexels-photo-376464.jpeg);
-    background-position: center;
-    background-size: cover;
-     height: 100%;
+#about h1 {
+    color: rgba(0, 175, 135, 0.77);
+    padding-top: 5vh;
+    text-align: center;
+    font-size: 56px;
+    font-weight: bold;
+
 }
-.slide:nth-child(2) {
-    animation-delay: 2s;
-    background-image: url(../img/food-dinner-lemon-rice.jpg);
-    background-position: center;
-    background-size: cover;
-     height: 100%;
+
+#about h5 {
+    text-align: center;
+    margin-bottom: 10vh;
 }
-.slide:nth-child(3) {
-    animation-delay: 5s;
-    background-image: url(../img/pexels-photo-718742.jpeg);
-    background-position: center;
-    background-size: cover;
-    height: 100%;
+
+.pica {
+    text-align: center;
 }
-.slide:nth-child(4) {
-    animation-delay: 8s;
-    background-image: url(../img/salad-healthy-diet-spinach%20copy.jpg);
-    background-position: center;
-    background-size: cover;
-     height: 100%;
+
+.pica img {
+    border-radius: 50%;
+    width: 150px;
+    padding-top: 20px;
+    height: 150px;
 }
-.slide p {
-    font-size: 70px;
-    width: 100%;
-    display: inline-block;
-    margin-top: 340px;
+
+.blok h3 {
+    color: rgba(0, 175, 135, 0.77);
+}
+
+.text_us {
+    padding: 10px 20px;
+}
+
+#catering {
+    margin-bottom: 50vh;
+    height: 60vh;
+    background: linear-gradient(160deg, rgba(0, 175, 135, 0.77) 51.0%, rgba(255, 255, 255, 0.77) 51.0%);
+}
+
+#catering h3 {
     color: white;
+    font-size: 56px;
+    width: 50%;
+    margin-left: 25%;
+    padding-top: 10vh;
     text-align: center;
-    text-align: center;
+    position: absolute;
 }
 
-@keyframes slide{
-    0%{left: 100%; width: 100%}
-    5%{left: 0%;}
-    25%{left: 0%;}
-    30%{left: -100%; width: 100%;}
-    30.0001%{left: -100%; width:0%;}
-    100%{left: 100%; width:0%;}
-    
+#vierkant {
+    background: linear-gradient(160deg, rgba(0, 175, 135, 0.77) 15.4%, rgba(255, 255, 255, 0.77) 15.4%);
+    height: 20vh;
 }
+
+
+#contact h4 {
+    color: rgba(0, 175, 135, 0.77);
+    font-size: 56px;
+    width: 50%;
+    margin-left: 25%;
+
+    text-align: center;
+    position: absolute;
+}
+
+#contact {
+    height: 100vh;
+    background: linear-gradient(310deg, rgba(0, 175, 135, 0.77) 25.4%, rgba(255, 255, 255, 0.77) 25.4%);
+
+}
+
+/*---------------------- catering----------------------------*/
+
+#container {
+    padding-left: 33%;
+    padding-top: 41vh;
+}
+
+
+.group {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+#green input {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #10a750;
+}
+
+
+
+th {
+    width: 100%;
+    float: left;
+    text-align: left;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    border-bottom: 15px solid white;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* LABEL ======================================= */
+
+label {
+    color: #10a750;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -webkit-transition: 0.3s ease all;
+}
+
+/* active state */
+
+input:focus ~ label,
+input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* BOTTOM BARS ================================= */
+
+.bar {
+    position: relative;
+    display: block;
+    width: 300px;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #10a750;
+    transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -webkit-transition: 0.3s ease all;
+}
+
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+/* active state */
+
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+    width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* active state */
+
+input:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.4s ease;
+    -moz-animation: inputHighlighter 0.4s ease;
+    animation: inputHighlighter 0.4s ease;
+}
+
+/* ANIMATIONS ================ */
+
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: #3bba9a;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@-moz-keyframes inputHighlighter {
+    from {
+        background: #3bba9a;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #3bba9a;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+/*----------------------einde catering----------------------------*/

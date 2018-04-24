@@ -20,7 +20,7 @@ $(document).ready(function () {
 
         e.preventDefault();
         $("body,html").animate({
-            scrollTop: $(this.hash).offset().top
+            scrollTop: $(this.hash).offset().top - 50
         }, 2000);
     });
     //Active link switching
@@ -40,19 +40,20 @@ $(document).ready(function () {
 
 
 $(window).scroll(function () {
-    if ($(document).scrollTop() > 50) {
+    if ($(document).scrollTop() > 10) {
         $("nav").css("box-shadow", ' 0px 4px 48px -1px rgba(0,0,0,0.57)');
-    } else if ($(document).scrollTop() < 50) {
+    } else if ($(document).scrollTop() < 10) {
         $("nav").css("box-shadow", ' 0px 4px 48px -1px rgba(0,0,0,0.00)');
-        $("nav").css("  transition", '  all 1.0s');
+        
     }
 });
 $(window).scroll(function () {
     if ($(document).scrollTop() > 1) {
-       $("nav").css("background", ' linear-gradient(120deg, rgba(10, 195, 153, 0.8) 51.0%, rgba(255, 255, 255, 0.8) 51.0%)');
+       $("nav").css("background", ' linear-gradient(120deg, rgba(71, 193, 162, 0.80) 52.25%, rgba(255, 255, 255, 0.8) 52.25%)');
     } else if ($(document).scrollTop() < 1) {
          $("nav").css("background", 'none');
     }
 });
+
 
 
