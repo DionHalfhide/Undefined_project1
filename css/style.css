@@ -12,6 +12,9 @@ ul {
 li {
     display: inline-block;
 }
+.active a {
+
+}
 
 
 #login {
@@ -101,6 +104,13 @@ nav a:hover {
     text-decoration-line: line-through;
 
 }
+#list_pic img{
+    width: 350px;
+    position: absolute;
+    margin-top: -75vh;
+    right: 0;
+}
+
 
 #begin_grid {
     padding-top: 80vh;
@@ -120,10 +130,10 @@ nav a:hover {
 .text h1 {
     padding-right: 5px;
     text-transform: capitalize;
-    margin-top: -25vh;
+    margin-top: -21vh;
     float: right;
     text-align: right;
-    font-size: 90px;
+    font-size: 70px;
     color: rgba(0, 175, 135, 0.77);
 }
 
@@ -190,7 +200,7 @@ nav a:hover {
     color: white;
     padding: 10px 0px 10px 100px;
     text-align: left;
-    background: linear-gradient(120deg, rgba(0, 175, 135, 0.77) 5.0%, rgba(255, 255, 255, 0.77) 21.0%);
+    background: linear-gradient(120deg, rgba(0, 175, 135, 0.77) 21.0%, rgba(255, 255, 255, 0.77) 21.0%);
 
 }
 
@@ -253,22 +263,45 @@ nav a:hover {
 }
 
 .pica {
+     background-repeat: no-repeat;
+    height: 110px;
+    width: 130px;
+    border-radius: 50%;
+    padding-top: 20px;
     text-align: center;
+    margin-top: 20px;
+    margin-left: 40px;
 }
 
-.pica img {
-    border-radius: 50%;
-    width: 150px;
-    padding-top: 20px;
-    height: 150px;
+.pic11{
+    background-size: 180%;
+    background-position: center;
+    background-image: url(../img/Jamie-Oliver.jpg);
 }
+.pic22{
+    background-size: 200%;
+    background-position:50% 100%;
+    background-image: url(../img/gordan.jpg);
+}
+.pic33{
+    background-size: 100%;
+    background-position:top center;
+    background-image: url(../img/chef.jpeg);
+}
+.pic44{
+    background-size: 180%;
+    background-position: 42% 50%;
+    background-image: url(../img/dion.jpg);
+}
+
+
 
 .blok h3 {
     color: rgba(0, 175, 135, 0.77);
 }
 
 .text_us {
-    padding: 10px 20px;
+    padding: 10px 30px;
 }
 
 #catering {
@@ -459,4 +492,3 @@ input:focus ~ .highlight {
     }
 }
 
-/*----------------------einde catering----------------------------*/

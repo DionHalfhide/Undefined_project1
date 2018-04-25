@@ -49,11 +49,15 @@ $(window).scroll(function () {
 });
 $(window).scroll(function () {
     if ($(document).scrollTop() > 1) {
-       $("nav").css("background", ' linear-gradient(120deg, rgba(71, 193, 162, 0.80) 52.25%, rgba(255, 255, 255, 0.8) 52.25%)');
+       $("nav").css("background", ' linear-gradient(120deg, rgba(71, 193, 162, 0.80) 52.39%, rgba(255, 255, 255, 0.8) 52.39%)');
     } else if ($(document).scrollTop() < 1) {
          $("nav").css("background", 'none');
     }
 });
+
+
+
+  
 
 
 
