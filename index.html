@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Noid/Food</title>
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
-    <link rel="stylesheet" href="dist/css/styles.css" /> 
+    <link rel="stylesheet" href="dist/css/styles.css" />
 
 </head>
 
@@ -48,6 +48,13 @@
         }
 
     </script>
+    
+    <form method="post" action="login.php">
+    <input type="text" name="Gebruikersnaam:" placeholder="Gebruikersnaam" /> <br />
+    <input type="password" name="Wachtoord" placeholder="Wachtoord" />
+    <button type="submit" class="btn">Login</button>
+  </form>
+    
     <section id="begin">
         <div class="dropdown">
             <div id="login"><a href="#">
@@ -196,36 +203,36 @@
             </div>
         </section>
     </section>
-    <section id="about" >
+    <section id="about">
         <h1 data-aos="fade-up"> Team</h1>
         <h5 data-aos="fade-up">OUre team consist of a small groep al heiliy trind profecionals who are delevering constant qality</h5>
         <div id="grid_about" data-aos="fade-up">
             <div class="blok blok1">
                 <div class="pica pic11"></div>
                 <div class="text_us text_us1">
-                    <h3 >Jamie Oliver</h3>
-                    <p >sous chef</p>
+                    <h3>Jamie Oliver</h3>
+                    <p>sous chef</p>
                 </div>
             </div>
             <div class="blok blok2">
                 <div class="pica pic22"></div>
                 <div class="text_us text_us1">
-                    <h3 >Jamie Oliver</h3>
-                    <p >sous chef</p>
+                    <h3>Jamie Oliver</h3>
+                    <p>sous chef</p>
                 </div>
             </div>
-            <div class="blok blok3" >
+            <div class="blok blok3">
                 <div class="pica pic33"></div>
                 <div class="text_us text_us1">
-                    <h3  >Jamie Oliver</h3>
-                    <p >sous chef</p>
+                    <h3>Jamie Oliver</h3>
+                    <p>sous chef</p>
                 </div>
             </div>
             <div class="blok blok4">
                 <div class="pica pic44"></div>
                 <div class="text_us text_us1">
-                    <h3 >Dion halfhide</h3>
-                    <p > Big boss</p>
+                    <h3>Dion halfhide</h3>
+                    <p> Big boss</p>
                 </div>
             </div>
         </div>
@@ -237,9 +244,7 @@
                 <br />
                 <form id="greeen" action="jummyhtml.php" method="get">
                     <div class="lijn">
-
                         <table>
-
                             <tr>
                                 <th>
                                     Surename
@@ -334,37 +339,51 @@
         </div>
     </section>
     <section id="contact">
-        <h4 data-aos="fade-up">Contact</h4>
-        <div></div>
+        <h4 >Contact</h4>
+        <div class="contact_info">
+            <div class="super">
+                <div class="f2">
+                    <div id="m">
+                        <h5>Phone</h5>
+                        <a href="#">+31 639 180 769</a>
+                    </div>
+                    <div id="m">
+                        <h5>MAIL</h5>
+                        <a href="#">Dion-denzel@live.nl</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="media_pic">
+            <a id="a" href=""><img src="img/twitter.png"></a>
+            <a id="b" href=""><img src="img/instagram.png"></a>
+            <a id="c" href=""><img src="img/linkedin.png"></a>
+            <a id="d" href=""><img src="img/facebook-logo.png"></a>
+        </div>
+      
     </section>
-
-
-     <script src="js/main.js"></script>
-
+    <script src="js/main.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
-
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script src="http://localhost:3002/dist/aos.js"></script>
-
     <script>
         AOS.init({
             easing: 'ease-out-back',
             duration: 3000
         });
+
     </script>
-
     <script>
+        
         hljs.initHighlightingOnLoad();
-
         $('.hero__scroll').on('click', function(e) {
             $('html, body').animate({
                 scrollTop: $(window).height()
             }, 2000);
         });
     </script>
-   
-
 </body>
 
 </html>

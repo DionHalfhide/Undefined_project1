@@ -12,6 +12,7 @@ $(document).ready(function () {
         
     });
 
+
     
     //smooth scrolling
     var scrollLink = $(".scroll");
@@ -54,6 +55,8 @@ $(window).scroll(function () {
          $("nav").css("background", 'none');
     }
 });
+
+
 
 
 

@@ -12,9 +12,8 @@ ul {
 li {
     display: inline-block;
 }
-.active a {
 
-}
+.active a {}
 
 
 #login {
@@ -104,7 +103,8 @@ nav a:hover {
     text-decoration-line: line-through;
 
 }
-#list_pic img{
+
+#list_pic img {
     width: 350px;
     position: absolute;
     margin-top: -75vh;
@@ -243,7 +243,7 @@ nav a:hover {
 
 #about {
     z-index: -1;
-    background: linear-gradient(345deg, rgba(0, 175, 135, 0.77) 51.0%, rgba(255, 255, 255, 0.77) 51.0%);
+    background: linear-gradient(338deg, rgba(0, 175, 135, 0.77) 51.0%, rgba(255, 255, 255, 0.77) 51.0%);
     margin-top: 20vh;
     height: 80vh;
 }
@@ -263,7 +263,7 @@ nav a:hover {
 }
 
 .pica {
-     background-repeat: no-repeat;
+    background-repeat: no-repeat;
     height: 110px;
     width: 130px;
     border-radius: 50%;
@@ -273,27 +273,29 @@ nav a:hover {
     margin-left: 40px;
 }
 
-.pic11{
+.pic11 {
     background-size: 180%;
     background-position: center;
     background-image: url(../img/Jamie-Oliver.jpg);
 }
-.pic22{
+
+.pic22 {
     background-size: 200%;
-    background-position:50% 100%;
+    background-position: 50% 100%;
     background-image: url(../img/gordan.jpg);
 }
-.pic33{
+
+.pic33 {
     background-size: 100%;
-    background-position:top center;
+    background-position: top center;
     background-image: url(../img/chef.jpeg);
 }
-.pic44{
+
+.pic44 {
     background-size: 180%;
     background-position: 42% 50%;
     background-image: url(../img/dion.jpg);
 }
-
 
 
 .blok h3 {
@@ -305,9 +307,7 @@ nav a:hover {
 }
 
 #catering {
-    margin-bottom: 50vh;
-    height: 60vh;
-    background: linear-gradient(160deg, rgba(0, 175, 135, 0.77) 51.0%, rgba(255, 255, 255, 0.77) 51.0%);
+    background: linear-gradient(170deg, rgba(0, 175, 135, 0.77) 33.0%, rgba(255, 255, 255, 0.77) 33.0%);
 }
 
 #catering h3 {
@@ -329,18 +329,112 @@ nav a:hover {
 #contact h4 {
     color: rgba(0, 175, 135, 0.77);
     font-size: 56px;
-    width: 50%;
-    margin-left: 25%;
-
     text-align: center;
-    position: absolute;
 }
 
 #contact {
-    height: 100vh;
-    background: linear-gradient(310deg, rgba(0, 175, 135, 0.77) 25.4%, rgba(255, 255, 255, 0.77) 25.4%);
-
+    padding-top: 10vh;
+    height: 55vh;
+    background: linear-gradient(320deg, rgba(0, 175, 135, 0.77) 25.4%, rgba(255, 255, 255, 0.77) 25.4%);
 }
+
+.media_pic {
+    margin-right: 50px;
+}
+
+.media_pic img {
+    float: right;
+    width: 20px;
+    padding-bottom: 5px;
+}
+
+.media_pic #b img,
+#c img,
+#d img {
+    margin-right: 15px;
+}
+
+#contact p {
+    color: rgba(0, 175, 135, 0.77);
+    position: absolute;
+    padding-left: 10px;
+}
+
+.media_pic img:hover {
+    border-bottom: 1px solid white;
+}
+
+.super {
+    text-align: center;
+}
+
+.f2 {
+    transition: all 1.0s;
+}
+
+.f2 h5 {
+    letter-spacing: 2px;
+    color: rgba(0, 175, 135, 0.77);
+}
+
+.f2 h1 {
+    color: rgba(0, 175, 135, 0.77);
+    letter-spacing: 2px;
+}
+
+.f2 a {
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: lightgray;
+    text-decoration: none;
+}
+
+#pp h6{
+    position: absolute;
+padding-left: 10px;
+    padding-top: 10px;
+color: rgba(0, 175, 135, 0.77);}
+
+
+
+#m p {
+    color: lightgray;
+    letter-spacing: 2px;
+    font-size: 22px;
+}
+
+#s > a,
+#m > a {
+    position: relative;
+    margin-bottom: 15px;
+    display: inline-block;
+    transition: all 1.5s;
+    text-decoration-line: none;
+}
+
+#s > a:before,
+#m > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 175, 135, 0.77);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+#s > a:hover:before,
+#m > a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
 
 /*---------------------- catering----------------------------*/
 
@@ -361,12 +455,13 @@ nav a:hover {
     display: block;
     width: 100%;
     border: none;
-    border-bottom: 1px solid #10a750;
+    border-bottom: 1px solid rgba(0, 175, 135, 0.77);
 }
 
 
 
 th {
+    color: lightgray;
     width: 100%;
     float: left;
     text-align: left;
@@ -375,6 +470,7 @@ th {
     border-bottom: 15px solid white;
 }
 
+
 input:focus {
     outline: none;
 }
@@ -382,7 +478,7 @@ input:focus {
 /* LABEL ======================================= */
 
 label {
-    color: #10a750;
+    color: rgba(0, 175, 135, 0.77);
     font-size: 18px;
     font-weight: normal;
     position: absolute;
@@ -418,7 +514,7 @@ input:valid ~ label {
     width: 0;
     bottom: 1px;
     position: absolute;
-    background: #10a750;
+    background: rgba(0, 175, 135, 0.77);
     transition: 0.3s ease all;
     -moz-transition: 0.3s ease all;
     -webkit-transition: 0.3s ease all;
@@ -464,7 +560,7 @@ input:focus ~ .highlight {
 
 @-webkit-keyframes inputHighlighter {
     from {
-        background: #3bba9a;
+        background: rgba(0, 175, 135, 0.77);
     }
     to {
         width: 0;
@@ -474,7 +570,7 @@ input:focus ~ .highlight {
 
 @-moz-keyframes inputHighlighter {
     from {
-        background: #3bba9a;
+        background: rgba(0, 175, 135, 0.77);
     }
     to {
         width: 0;
@@ -484,11 +580,10 @@ input:focus ~ .highlight {
 
 @keyframes inputHighlighter {
     from {
-        background: #3bba9a;
+        background: rgba(0, 175, 135, 0.77);
     }
     to {
         width: 0;
         background: transparent;
     }
 }
-
